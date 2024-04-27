@@ -1,0 +1,7 @@
+.home-container {
+  background-image: url('background.jpeg'); /* Assurez-vous de remplacer 'background.jpg' par le nom de votre image */
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble du conteneur */
+  padding-left: 20px; /* Ajoute de l'espace à gauche */
+  padding-right: 20px; /* Ajoute de l'espace à droite */
+  /* Ajoutez d'autres propriétés CSS au besoin */
+}
