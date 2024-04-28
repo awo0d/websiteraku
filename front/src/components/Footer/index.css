@@ -1,0 +1,11 @@
+.Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #bb2929; /* Changez la couleur de fond selon vos besoins */
+    height: 50px; /* Ajustez la hauteur selon votre design */
+  }
+  

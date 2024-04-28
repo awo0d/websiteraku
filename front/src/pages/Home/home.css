@@ -1,7 +1,22 @@
 .home-container {
-  background-image: url('background.jpeg'); /* Assurez-vous de remplacer 'background.jpg' par le nom de votre image */
-  background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble du conteneur */
-  padding-left: 20px; /* Ajoute de l'espace à gauche */
-  padding-right: 20px; /* Ajoute de l'espace à droite */
-  /* Ajoutez d'autres propriétés CSS au besoin */
+  margin-left: 10px; /* Décalage vers la gauche */
+  display: flex;
+  justify-content: center; /* Alignement horizontal au centre */
+  align-items: center; /* Alignement vertical au centre */
+  height: 100vh;
+  background-image: url('background.jpeg'); /* Ajout de l'image de fond */
+  background-size: cover;
+  background-position: center;
+}
+
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ajuster le z-index pour que le contenu soit au-dessus de l'image de fond */
+  background-color: rgba(255, 255, 255, 0.8); /* Pour que le contenu soit plus lisible, ajouter un fond blanc semi-transparent */
+  padding: 20px; /* Ajouter un peu de marge intérieure pour le contenu */
 }

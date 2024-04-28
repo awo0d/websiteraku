@@ -2,15 +2,8 @@
 
 /* Styles for #root */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   display: flex; /* Utiliser Flexbox */
-  justify-content: flex-start; /* Aligner les éléments horizontalement à gauche */
-  
 }
-
-
 
 
 
@@ -55,43 +48,7 @@
   color: #888;
 }
 
-/* Additional styles for Header, Footer, and Navigation Bar */
-.header {
-  background-color: #f2f2f2; /* gris clair */
-  color: #333; /* texte gris foncé */
-  padding: 10px 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-.footer {
-  background-color: #f2f2f2; /* gris clair */
-  color: #333; /* texte gris foncé */
-  padding: 10px 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
 
-.navbar {
-  background-color: #444; /* gris foncé */
-  color: #fff;
-  padding: 10px 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
 
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
-.navbar ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.navbar ul li a {
-  color: #fff;
-  text-decoration: none;
-}

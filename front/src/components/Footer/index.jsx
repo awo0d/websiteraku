@@ -1,8 +1,8 @@
-
+import './index.css';
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="Footer">Douae CHTIOUI</div>
+  );
+};
 
-export default Footer
+export default Footer;

@@ -1,0 +1,28 @@
+nav {
+    position: fixed;
+    top: 20px; /* Ajustez cette valeur selon vos besoins */
+    right: 20px; /* Ajustez cette valeur selon vos besoins */
+    font-family: "Arial", sans-serif; /* Choisissez une belle police d'écriture */
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Alignement des éléments à droite */
+  }
+  
+  li {
+    margin-left: 20px; /* Espace entre chaque lien */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333; /* Choisissez la couleur du texte */
+  }
+  
+  a:hover {
+    color: #c73333; /* Choisissez la couleur du texte au survol */
+  }
+  
