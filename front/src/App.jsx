@@ -2,9 +2,11 @@ import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 // import of pages
 import Home from './pages/Home';
+import Leraku from "./pages/Leraku";
 import Article from './components/Article';
 import Header from './components/Header';
 import Footer from './components/Footer';
+
 
 import './App.css';
 import { ArtProvider } from "./context/artProvider";
@@ -17,8 +19,9 @@ function App() {
       <ArtProvider>
         <Header />
         <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/article/:id" element={<Article/>} />
+            <Route path="/" element={<Home />} />
+            <Route path="/leraku" element={<Leraku />} />
+            <Route path="/article/:id" element={<Article />} />
             <Route path="*" element={<p>Error 404</p>} />
         </Routes>
         <Footer />

@@ -6,7 +6,7 @@ const ArtProvider=({children})=>{
     const [arts,setArts]=useState()
     const fetchArts=async () =>{
         const artResponse = await axios.get(
-            "Data.json"
+            "data.json"
             //"http://localhost:3000/dancer_workshop/read"
           );
           setArts(artResponse);

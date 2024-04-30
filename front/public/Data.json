@@ -1,3 +1,12 @@
+[
+    {
+    "id":"1",
+    "name":"fleurs",
+    "image":"fleurs.jpg"
+},
 {
-    "Article":"article"
+    "id":"2",
+    "name":"pot",
+    "image":"pot.jpg"
 }
+]

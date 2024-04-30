@@ -1,22 +1,52 @@
 .home-container {
   margin-left: 10px; /* Décalage vers la gauche */
   display: flex;
-  justify-content: center; /* Alignement horizontal au centre */
+  justify-content: center top; /* Alignement horizontal au centre */
   align-items: center; /* Alignement vertical au centre */
-  height: 100vh;
+  height: 88vh;
   background-image: url('background.jpeg'); /* Ajout de l'image de fond */
   background-size: cover;
   background-position: center;
 }
 
+body {
+  display: flex;
+  background-image: url('background.jpeg');
+  background-size: 60%; /* Réduire la taille de l'image à 50% de sa taille originale */
+  background-position: right;
+  background-color: white;
+  background-repeat: no-repeat;
+  margin-right: 50px;
+  margin-top: 0px;
+  min-height: 0vh;
+}
+
+hr {
+  margin: 20px 0; /* Ajouter un espacement vertical de 20px au-dessus et en dessous du hr */
+}
+
+.text-container {
+  /* width: 60%; */ /* Supprimez ou commentez cette ligne pour permettre au texte de s'étendre sur toute la largeur disponible */
+  width: 100%; /* Utilisez cette ligne pour définir la largeur sur 100% */
+  padding: 30px;
+  margin-left: 10px;
+  margin-top: 20px; /* Marge supérieure de 20px */
+  margin-bottom: 20px; /* Marge inférieure de 20px */
+}
+
+.text-container > * {
+  margin-bottom: 10px; /* Marge inférieure de 10px pour chaque élément enfant */
+}
+
+
 
 .content {
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 25%;
   right: 30%;
   transform: translate(-50%, -50%);
   z-index: 1; /* Ajuster le z-index pour que le contenu soit au-dessus de l'image de fond */
-  background-color: rgba(255, 255, 255, 0.8); /* Pour que le contenu soit plus lisible, ajouter un fond blanc semi-transparent */
+  
   padding: 20px; /* Ajouter un peu de marge intérieure pour le contenu */
 }

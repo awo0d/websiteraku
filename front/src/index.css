@@ -22,17 +22,7 @@ a:hover {
   color: #d23030;
 }
 
-body {
-  display: flex;
-  background-image: url('background.jpeg');
-  background-size: 60%; /* Réduire la taille de l'image à 50% de sa taille originale */
-  background-position: right;
-  background-color: white;
-  background-repeat: no-repeat;
-  margin-right: 50px;
-  margin-top: 0px;
-  min-height: 0vh;
-}
+
 
 h1 {
   font-size: 3.2em;
