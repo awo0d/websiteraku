@@ -1,13 +1,19 @@
-.card{
-    display: flex;
-    width: 250px;
-    height: 350px;
-    border: 1px solid black;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
+.card {
+    width: 200px; /* Largeur réduite pour chaque carte */
+    height: 100px; /* Hauteur réduite pour chaque carte */
+    border: 5px solid black; /* Bordure plus épaisse */
+
+    border-radius: 10px; /* Coins arrondis */
+    margin: 10px; /* Marge entre chaque carte */
+    overflow: hidden; /* Pour que l'image ne dépasse pas le cadre */
+    display: flex; /* Utilisation de flexbox pour centrer l'image */
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
 }
+
 .card img {
-    height:300px;
-    width: auto;
+    height: 400px;
+    max-width: 100%; /* Utiliser la largeur maximale possible pour l'image */
+    max-height: 100%; /* Utiliser la hauteur maximale possible pour l'image */
+    object-fit: cover; /* Pour s'assurer que l'image remplit complètement la carte */
 }

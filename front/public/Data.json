@@ -6,7 +6,22 @@
 },
 {
     "id":"2",
-    "name":"pot",
-    "image":"pot.jpg"
+    "name":"pot2",
+    "image":"pot2.jpg"
+},
+{
+    "id":"3",
+    "name":"pot3",
+    "image":"pot3.jpg"
+},
+{
+    "id":"4",
+    "name":"pot4",
+    "image":"pot4.jpg"
+},
+{
+    "id":"5",
+    "name":"pot5",
+    "image":"pot5.jpg"
 }
 ]

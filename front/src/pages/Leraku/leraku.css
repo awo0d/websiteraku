@@ -1,0 +1,26 @@
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px; /* Ajoute une marge au-dessus de la galerie */
+}
+.intro-text {
+    padding-top: 6%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 32px; /* Taille de police plus grande */
+    margin-bottom: 5px; /* Marge en bas du titre */
+}
+
+.subtitle {
+    font-size: 18px; /* Taille de police plus petite */
+    margin-bottom: 5px; /* Marge en bas du sous-titre */
+}
+
+.highlighted-text {
+    font-weight: bold; /* Texte en gras */
+    color: blue; /* Couleur de texte bleue */
+}

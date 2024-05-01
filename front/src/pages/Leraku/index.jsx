@@ -5,18 +5,16 @@ import Card from "../../components/Card";
 const Leraku = () => {
   const { arts } = useArt();
   return (
-    <div className="home-container">
-      <div className="content">
-        <div className="text-container">
-          <h1>Atelier Raku San</h1>
-          <p>Sandrine ALLEGRINI</p>
-
-        </div>
-        <div className="gallery" > 
+    <div>
+      <div className="intro-text">
+        <h1 className="title">Les boites</h1>
+        <p className="subtitle">Petites séries et pièces uniques</p>
+        <p className="highlighted-text">Texturées:</p>
+      </div>
+      <div className="gallery"> 
         {arts && arts.map((item)=>(
           <Card key={item.id} item={item}/>
         ))}
-        </div>
       </div>
     </div>
   );
