@@ -1,25 +1,51 @@
 .home-container {
   display: flex;
+  margin-top: 4%;
+  width: 80%;
+  position: relative;
 }
 
 .content {
-  flex: 1; /* Le contenu prendra autant d'espace que possible */
-  padding: 20px; /* Ajout d'un padding pour l'espace autour du contenu */
-  padding-left: 0%;
-  padding-right: 100px;
-  padding-top: 6%;
+  flex: 1;
+  padding: 20px;
+}
+
+.schedule {
+  background-color: #f8f3ff;
+  border: 2px #c73333 solid;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-top: 20px;
 }
 
 .background-image {
-  width: 15%; /* Largeur de l'image */
-  background-image: url('background.jpeg'); /* Chemin vers votre image */
-  background-size: 88%; /* Pour couvrir tout le conteneur avec l'image */
-  background-position: right; /* Position de l'image à droite */
+  width: 15%;
+  background-image: url('background.jpeg');
+  background-size: 88%;
+  background-position: right;
   height: 550px;
-  padding-left: 300px; /* Ajouter un espace entre le texte et l'image */
+  padding-left: 300px;
   background-repeat: no-repeat;
 }
 
-.content h1 {
-  margin-top: 0; /* Supprime la marge supérieure pour le titre */
+.schedule ul {
+  list-style: none;
+  padding-left: 0;
 }
+
+.schedule ul li {
+  margin-left: 20px;
+}
+.custom-ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.custom-ul li {
+  margin-left: 20px;
+}
+

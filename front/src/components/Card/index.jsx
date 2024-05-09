@@ -5,6 +5,7 @@ const Card = ({item}) => {
     <div className="card" > 
         <img src={item.image} alt={item.name}/>
     </div>
+    
   )
 }
 

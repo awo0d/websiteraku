@@ -1,28 +1,43 @@
-nav {
-    position: fixed;
-    top: 20px; /* Ajustez cette valeur selon vos besoins */
-    right: 20px; /* Ajustez cette valeur selon vos besoins */
-    font-family: "Arial", sans-serif; /* Choisissez une belle police d'écriture */
-  }
-  
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: flex-end; /* Alignement des éléments à droite */
-  }
-  
-  li {
-    margin-left: 20px; /* Espace entre chaque lien */
-  }
-  
-  a {
-    text-decoration: none;
-    color: #333; /* Choisissez la couleur du texte */
-  }
-  
-  a:hover {
-    color: #c73333; /* Choisissez la couleur du texte au survol */
-  }
-  
+.nav-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  background-color: #c73333; /* Fond rouge */
+  border-radius: 10px; /* Coins arrondis */
+  padding: 10px 20px; /* Espacement interne */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
+  flex-direction: column; /* Organiser en colonnes */
+}
+
+.nav-ul.menu-open {
+  display: flex;
+}
+
+.nav-li {
+  margin-bottom: 10px; /* Espace entre chaque élément */
+  text-decoration-color: white;
+}
+
+.nav-li a {
+  text-decoration: none;
+  color: #fff; /* Texte blanc */
+}
+
+.nav-li a:hover {
+  color: #ffdddd; /* Texte blanc au survol */
+}
+.menu-button {
+  position: absolute;
+  right: 20px; /* Ajustez cette valeur selon vos besoins */
+  top: 10px; /* Ajustez cette valeur selon vos besoins */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #c73333; /* Couleur du bouton rouge */
+  font-size: 16px;
+}
+
+.menu-button:hover {
+  color: #ffdddd; /* Couleur du bouton rouge au survol */
+}
