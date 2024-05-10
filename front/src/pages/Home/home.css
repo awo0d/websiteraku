@@ -1,16 +1,14 @@
 .home-container {
-  display: block; /* Affiche les éléments en bloc pour les écrans de téléphone */
+  display: flex;
   margin-top: 4%;
-  width: 90%; /* Réduire la largeur pour mieux s'adapter aux petits écrans */
-  margin: 0 auto; /* Centrer le contenu */
+  width: 80%;
+  position: relative;
+  margin-bottom: 70px;
 }
 
 .content {
+  flex: 1;
   padding: 20px;
-}
-
-.background-image {
-  display: none; /* Masquer l'image d'arrière-plan pour les écrans de téléphone */
 }
 
 .schedule {
@@ -25,13 +23,29 @@
   margin-top: 20px;
 }
 
-.schedule ul,
-.custom-ul {
+.background-image {
+  display: none; /* Cacher l'image par défaut */
+}
+
+.schedule ul, .custom-ul {
   list-style: none;
   padding-left: 0;
 }
 
-.schedule ul li,
-.custom-ul li {
+.schedule ul li, .custom-ul li {
   margin-left: 20px;
+}
+
+/* Media Queries pour les téléphones */
+@media only screen and (min-width: 768px) {
+  .background-image {
+    display: block; /* Afficher l'image lorsque la largeur de l'écran est suffisamment grande */
+    width: 15%;
+    background-image: url('background.jpeg');
+    background-size: 88%;
+    background-position: right;
+    height: 600px;
+    padding-left: 300px;
+    background-repeat: no-repeat;
+  }
 }
