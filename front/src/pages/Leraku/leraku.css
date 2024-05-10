@@ -1,35 +1,33 @@
 .raku-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-  }
-  
-  .raku-image {
-    height: 200px; /* Hauteur initiale de l'image */
-    width: 100%; /* Définissez la largeur à 100% pour assurer la responsivité */
-    background-image: url('raku.jpeg'); /* Définissez l'image de fond */
-    background-size: 33.33%; /* Réduisez la taille de l'image de fond à un tiers */
-    background-position: center; /* Centrez l'image de fond */
-    background-repeat: no-repeat;
-    margin: 10px auto; /* Ajoute un espace autour de l'image */
-    
-  }
-  
-  .description {
-    max-width: 600px;
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-    border: 2px solid #c73333; /* Encadre le texte en rouge */
-    border-radius: 10px;
-    padding: 10px; /* Ajoute un peu d'espace intérieur pour le texte */
-    margin-bottom: 30px;
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.raku-image {
+  height: 200px; /* Hauteur initiale de l'image */
+  width: 100%; /* Définissez la largeur à 100% pour assurer la responsivité */
+  background-image: url('raku.jpeg'); /* Définissez l'image de fond */
+  background-size: contain; /* Affichez l'image de fond en la dimensionnant de manière à ce que l'image soit complètement contenue dans le conteneur */
+  background-position: center; /* Centrez l'image de fond */
+  background-repeat: no-repeat;
+  margin: 10px auto; /* Ajoute un espace autour de l'image */
+}
+
+.description {
+  max-width: 600px;
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  border: 2px solid #c73333; /* Encadre le texte en rouge */
+  border-radius: 10px;
+  padding: 10px; /* Ajoute un peu d'espace intérieur pour le texte */
+  margin-bottom: 30px;
+}

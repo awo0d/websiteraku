@@ -1,37 +1,55 @@
 .expositions-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-bottom: 10px;
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 70px;
+}
+
+.title {
+  font-size: 24px; /* Réduire la taille de la police */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 18px; /* Réduire la taille de la police */
+  font-style: italic;
+  color: #666;
+  text-align: center;
+}
+
+.expositions {
+  margin-top: 15px; /* Réduire l'espacement en haut */
+}
+
+.year {
+  font-size: 20px; /* Réduire la taille de la police */
+  font-weight: bold;
+  color: #333;
+}
+
+.event {
+  font-size: 16px; /* Réduire la taille de la police */
+  color: #c73333; /* Couleur rouge spécifiée */
+  margin-right: 3px; /* Réduire la marge à droite */
+}
+
+/* Media Queries pour les téléphones */
+@media only screen and (max-width: 768px) {
   .title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
+      font-size: 20px; /* Réduire la taille de la police pour les écrans plus petits */
   }
-  
+
   .subtitle {
-    font-size: 20px;
-    font-style: italic;
-    color: #666;
-    text-align: center;
+      font-size: 16px; /* Réduire la taille de la police pour les écrans plus petits */
   }
-  
-  .expositions {
-    margin-top: 20px;
-  }
-  
+
   .year {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+      font-size: 18px; /* Réduire la taille de la police pour les écrans plus petits */
   }
-  
+
   .event {
-    font-size: 20px;
-    color: #c73333; /* Couleur rouge spécifiée */
-    margin-right: 5px;
+      font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
   }
-  
+}

@@ -1,88 +1,57 @@
 .page {
     border: 10px solid black;
-    border-radius: 50px;
+    border-radius: 30px; /* Réduire le rayon de la bordure */
     padding: 20px;
-    position: relative; /* Permet d'ajuster la position de la bande rouge */
-    margin-bottom: 10%;
+    position: relative;
+    margin-bottom: 5%; /* Réduire la marge inférieure */
+    margin: 5%; /* Réduire les marges */
 }
 
 .personnage-container {
     position: relative;
 }
 
-
-.gallery2 {
+.gallery2, .second-gallery2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 40px;
-}
-.second-gallery2 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 20px; /* Réduire l'espacement en haut */
+    background-color: #c73333;
+    border: 5px solid #c73333;
+    border-radius: 10px;
 }
 
 .intro-text2, .second-intro-text2 {
-    padding-top: 6%;
+    padding-top: 4%; /* Réduire l'espacement en haut */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Réduire l'espacement en bas */
 }
+
 .title2 {
-    font-size: 36px; /* Augmenter la taille de la police à 36px */
-    font-weight: bold; /* Mettre la police en gras */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Utiliser une police spécifique */
-    color: rgb(213, 46, 46); /* Couleur rouge spécifiée */
-    margin-right: 20px; /* Marge à droite */
-    margin-top: 8px; /* Marge en haut */
-    margin-left: 26px; /* Marge à gauche */
-    letter-spacing: 3px; /* Espacement entre les lettres */
+    font-size: 24px; /* Réduire la taille de la police */
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(213, 46, 46);
+    margin-right: 10px; /* Réduire la marge à droite */
+    margin-top: 4px; /* Réduire la marge en haut */
+    margin-left: 13px; /* Réduire la marge à gauche */
+    letter-spacing: 2px; /* Réduire l'espacement entre les lettres */
 }
-
-
 
 .subtitle2 {
-    font-size: 20px; /* Taille de police plus grande que pour highlighted-text */
-    color: #808080; /* Couleur gris */
-    margin-bottom: 10px; /* Augmenter la marge pour plus d'espace */
-    font-family: Arial, sans-serif; /* Police de caractères */
-    font-style: italic; /* Style de police italique */
+    font-size: 16px; /* Réduire la taille de la police */
+    color: #808080;
+    margin-bottom: 5px; /* Réduire l'espacement en bas */
+    font-family: Arial, sans-serif;
+    font-style: italic;
 }
-
 
 .highlighted-text2 {
     font-weight: bold;
-    font-size: 20px; /* Taille de la police plus grande */
-    color: black; /* Couleur du texte en noir */
-    text-decoration: underline; /* Soulignement du texte */
-    text-decoration-color: blue; /* Couleur du soulignement */
-    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/* Police de caractères */
+    font-size: 16px; /* Réduire la taille de la police */
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
-
-
-.first-band2 {
-    position: absolute;
-    top: calc(82% - 95px); /* Bas de la page */
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    height: 300px; /* Hauteur de la première bande rouge */
-    background-color: #c73333; /* Couleur de la première bande rouge */
-    z-index: -1; /* Assurer que la première bande rouge est positionnée derrière les autres éléments */
-  }
-  
-  .second-band2 {
-    position: absolute;
-    top: calc(41% - 122px); /* Position verticale pour la deuxième bande rouge */
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    height: 200px; /* Hauteur de la deuxième bande rouge */
-    background-color: #c73333; /* Couleur de la deuxième bande rouge */
-    z-index: -1; /* Assurer que la deuxième bande rouge est positionnée derrière les autres éléments */
-    padding-bottom: 30px;
-  }
-  

@@ -1,13 +1,16 @@
 .home-container {
-  display: flex;
+  display: block; /* Affiche les éléments en bloc pour les écrans de téléphone */
   margin-top: 4%;
-  width: 80%;
-  position: relative;
+  width: 90%; /* Réduire la largeur pour mieux s'adapter aux petits écrans */
+  margin: 0 auto; /* Centrer le contenu */
 }
 
 .content {
-  flex: 1;
   padding: 20px;
+}
+
+.background-image {
+  display: none; /* Masquer l'image d'arrière-plan pour les écrans de téléphone */
 }
 
 .schedule {
@@ -22,30 +25,13 @@
   margin-top: 20px;
 }
 
-.background-image {
-  width: 15%;
-  background-image: url('background.jpeg');
-  background-size: 88%;
-  background-position: right;
-  height: 550px;
-  padding-left: 300px;
-  background-repeat: no-repeat;
-}
-
-.schedule ul {
+.schedule ul,
+.custom-ul {
   list-style: none;
   padding-left: 0;
 }
 
-.schedule ul li {
-  margin-left: 20px;
-}
-.custom-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
+.schedule ul li,
 .custom-ul li {
   margin-left: 20px;
 }
-

@@ -7,7 +7,6 @@ const Masque = () => {
   console.log(masques);
   return (
     <div className="lemasque-container">
-      <div className="red-band1"></div> {/* Une seule bande rouge */}
       <div className="intro-text1">
         <h1 className="title1">Les Masques</h1> {/* Modifier le titre */}
         <p className="subtitle1">Pièces Uniques</p> {/* Modifier le sous-titre */}

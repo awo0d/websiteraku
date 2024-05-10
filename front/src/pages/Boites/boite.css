@@ -1,3 +1,5 @@
+/* Styles généraux */
+
 .page {
     border: 10px solid black;
     border-radius: 50px;
@@ -9,25 +11,25 @@
     position: relative;
 }
 
+.gallery, .second-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    background-color: #c73333;
+    border: 5px solid #c73333; /* Ajouter un cadre rouge autour des groupes de photos */
+    border-radius: 10px; /* Ajouter un rayon de bordure pour arrondir les coins */
+    padding: 10px; /* Ajouter un peu d'espace à l'intérieur du cadre */
+    margin-bottom: 70px;
+}
 
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-.second-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
 
 .intro-text, .second-intro-text {
     padding-top: 6%;
     text-align: center;
     margin-bottom: 20px;
 }
+
 .title {
     font-size: 36px; /* Augmenter la taille de la police à 36px */
     font-weight: bold; /* Mettre la police en gras */
@@ -39,8 +41,6 @@
     letter-spacing: 3px; /* Espacement entre les lettres */
 }
 
-
-
 .subtitle {
     font-size: 20px; /* Taille de police plus grande que pour highlighted-text */
     color: #808080; /* Couleur gris */
@@ -48,7 +48,6 @@
     font-family: Arial, sans-serif; /* Police de caractères */
     font-style: italic; /* Style de police italique */
 }
-
 
 .highlighted-text {
     font-weight: bold;
@@ -60,28 +59,28 @@
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/* Police de caractères */
 }
 
+/* Media Queries pour les téléphones */
 
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 24px; /* Réduire la taille de la police pour les écrans plus petits */
+        margin-left: 10px; /* Ajuster la marge pour les écrans plus petits */
+        margin-right: 10px; /* Ajuster la marge pour les écrans plus petits */
+    }
 
-.first-band {
-    position: absolute;
-    top: calc(83% - 95px); /* Bas de la page */
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    height: 300px; /* Hauteur de la première bande rouge */
-    background-color: #c73333; /* Couleur de la première bande rouge */
-    z-index: -1; /* Assurer que la première bande rouge est positionnée derrière les autres éléments */
-  }
-  
-  .second-band {
-    position: absolute;
-    top: calc(41% - 122px); /* Position verticale pour la deuxième bande rouge */
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    height: 300px; /* Hauteur de la deuxième bande rouge */
-    background-color: #c73333; /* Couleur de la deuxième bande rouge */
-    z-index: -1; /* Assurer que la deuxième bande rouge est positionnée derrière les autres éléments */
-    padding-bottom: 30px;
-  }
-  
+    .subtitle {
+        font-size: 16px; /* Réduire la taille de la police pour les écrans plus petits */
+    }
+
+    .highlighted-text {
+        font-size: 16px; /* Réduire la taille de la police pour les écrans plus petits */
+    }
+
+    .first-band, .second-band {
+        display: none; /* Masquer les bandes rouges sur les écrans plus petits */
+    }
+
+    .page {
+        border-radius: 0; /* Supprimer le bord arrondi sur les écrans plus petits */
+    }
+}

@@ -1,56 +1,46 @@
 .page {
     border: 10px solid black;
-    border-radius: 50px;
-    padding: 20px;
+    border-radius: 30px; /* Réduire le rayon de la bordure */
+    padding: 10px; /* Réduire l'espacement intérieur */
     position: relative;
 }
 
 .lemasque-container {
     position: relative;
-    padding-bottom: 10%;
+    padding-bottom: 5%; /* Réduire l'espacement en bas */
 }
 
 .gallery1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 20px; /* Réduire l'espacement en haut */
+    background-color: #c73333;
+    border-radius: 10px;
+    border: 5px solid #c73333; 
 }
 
 .intro-text1 {
-    padding-top: 6%;
+    padding-top: 4%; /* Réduire l'espacement en haut */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Réduire l'espacement en bas */
 }
 
 .title1 {
-    font-size: 36px;
+    font-size: 24px; /* Réduire la taille de la police */
     font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(213, 46, 46);
-    margin-right: 20px;
-    margin-top: 8px;
-    margin-left: 26px;
-    letter-spacing: 3px;
+    margin-right: 10px; /* Réduire la marge à droite */
+    margin-top: 4px; /* Réduire la marge en haut */
+    margin-left: 13px; /* Réduire la marge à gauche */
+    letter-spacing: 2px; /* Réduire l'espacement entre les lettres */
 }
 
 .subtitle1 {
-    font-size: 20px;
+    font-size: 16px; /* Réduire la taille de la police */
     color: #808080;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Réduire l'espacement en bas */
     font-family: Arial, sans-serif;
     font-style: italic;
-}
-
-
-
-.red-band1 {
-    position: absolute;
-    top: calc(34% - 95px); /* Bas de la page */
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    height: 530px; /* Hauteur de la première bande rouge */
-    background-color: #c73333; /* Couleur de la première bande rouge */
-    z-index: -1; /* Assurer que la première bande rouge est positionnée derrière les autres éléments */
 }

@@ -10,8 +10,6 @@ const Personnage = () => {
  
   return (
     <div className="personnage-container">
-      <div className="first-band2"></div> {/* Première bande rouge */}
-      <div className="second-band2"></div> {/* Deuxième bande rouge */}
       <div className="intro-text2">
         <h1 className="title2">Les boites</h1>
         <p className="subtitle2">Petites séries et pièces uniques</p>

@@ -1,25 +1,40 @@
 .contact-container {
-   
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center; /* Centre le contenu */
-  }
-  
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center; /* Centre le contenu */
+}
+
+.title {
+  padding-top: 30px; /* Réduire l'espacement en haut */
+  font-size: 30px; /* Réduire la taille de la police */
+  font-weight: bold;
+  color: #333;
+}
+
+.contact-info {
+  padding-top: 20px; /* Réduire l'espacement en haut */
+  margin-top: 10px; /* Réduire la marge en haut */
+}
+
+.contact-info p, .contact-info a {
+  font-size: 24px; /* Réduire la taille de la police */
+  color: #666;
+}
+
+/* Media Queries pour les téléphones */
+@media only screen and (max-width: 768px) {
   .title {
-    padding-top: 50px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #333;
+      font-size: 24px; /* Réduire la taille de la police pour les écrans plus petits */
+      padding-top: 20px; /* Réduire l'espacement en haut */
   }
-  
+
   .contact-info {
-    padding-top: 40px;
-    margin-top: 20px;
+      padding-top: 15px; /* Réduire l'espacement en haut */
+      margin-top: 5px; /* Réduire la marge en haut */
   }
-  
-  .contact-info p,.contact-info a {
-    font-size: 30px;
-    color: #666;
+
+  .contact-info p, .contact-info a {
+      font-size: 20px; /* Réduire la taille de la police pour les écrans plus petits */
   }
-  
+}
