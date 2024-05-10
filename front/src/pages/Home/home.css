@@ -2,13 +2,13 @@
   display: flex;
   margin-top: 4%;
   width: 80%;
-  position: relative;
   margin-bottom: 70px;
 }
 
 .content {
   flex: 1;
   padding: 20px;
+  z-index: 0;
 }
 
 .schedule {

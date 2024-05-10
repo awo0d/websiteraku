@@ -8,3 +8,7 @@
     margin-left: 26px; /* Marge à gauche */
     letter-spacing: 3px; /* Espacement entre les lettres */
 }
+.header{
+    width: 100%;
+    height: 100px;
+}

@@ -1,18 +1,18 @@
 .nav-ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: none;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
   background-color: #c73333; /* Fond rouge */
   border-radius: 10px; /* Coins arrondis */
   padding: 10px 20px; /* Espacement interne */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre */
-  flex-direction: column; /* Organiser en colonnes */
+  justify-content: flex-end;
 }
 
-.nav-ul.menu-open {
-  display: flex;
-}
+
 
 .nav-li {
   margin-bottom: 10px; /* Espace entre chaque élément */
@@ -21,6 +21,7 @@
 
 .nav-li a {
   text-decoration: none;
+  margin: 5px;
   color: #fff; /* Texte blanc */
 }
 
@@ -32,6 +33,7 @@
   right: 20px; /* Ajustez cette valeur selon vos besoins */
   top: 10px; /* Ajustez cette valeur selon vos besoins */
   background-color: transparent;
+  display: none;
   border: none;
   cursor: pointer;
   color: #c73333; /* Couleur du bouton rouge */
@@ -40,4 +42,30 @@
 
 .menu-button:hover {
   color: #ffdddd; /* Couleur du bouton rouge au survol */
+}
+
+@media (max-width: 540px) {
+  .menu-button{
+    display: block;
+  }
+  .nav-ul {
+    flex-direction: column;
+    width: 50px;
+    height: auto;
+  }
+  .nav-container{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-ul.menu-open{
+    width: 200px;
+  }
+  .nav-ul.menu-open {
+    display: flex;
+    position: relative;
+    z-index: 10;
+  }
+  .nav-ul.menu-closed {
+    display: none;
+  }
 }

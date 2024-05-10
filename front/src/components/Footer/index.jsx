@@ -11,7 +11,7 @@ const Footer = () => {
 
   return (
     <div className="Footer">
-      <button onClick={openModal}>Connexion</button>
+      <p onClick={openModal}>Administration</p>
       {modalOpen && <Modal closeModal={() => setModalOpen(false)} />}
     </div>
   );
@@ -36,7 +36,7 @@ const Modal = ({ closeModal }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h2>Connexion</h2>
+        <h2>Admin</h2>
         {error && <p className="error">{error}</p>}
         <form onSubmit={handleSubmit}>
           <input

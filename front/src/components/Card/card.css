@@ -4,17 +4,19 @@
     /*width: 200px; /* Largeur de la carte */
     height: 220px; /* Hauteur de la carte */
     margin-bottom: 20px; /* Espacement entre les cartes */
-    transition: transform 0.3s ease;
+   transition: transform 0.3s ease;
     margin: 10px;
     background-color: white;
+    max-width: 350px;
 }
+
 
 .card img {
     width: 100%; /* Pour remplir toute la largeur de la carte */
     height: 100%; /* Pour remplir toute la hauteur de la carte */
-    object-fit: cover; /* Utiliser l'image pour remplir complètement la carte */
+    /*object-fit: cover; /* Utiliser l'image pour remplir complètement la carte */
 }
 
 .card:hover {
-    transform: scale(2);
+    transform: scale(1.5);
 }
