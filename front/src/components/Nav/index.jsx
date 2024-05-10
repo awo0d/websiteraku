@@ -17,7 +17,7 @@ const Nav = () => {
           <li className="nav-li"><Link to="/">Accueil</Link></li>
           <li className="nav-li"><Link to="/leraku">Le Raku</Link></li>
           <li className="nav-li"><Link to="/masque">Masques</Link></li>
-          <li className="nav-li"><Link to="/personnages">Personnages</Link></li>
+          <li className="nav-li"><Link to="/personnage">Personnages</Link></li>
           <li className="nav-li"><Link to="/boites">Boites</Link></li>
           <li className="nav-li"><Link to="/expositions">Expositions</Link></li>
           <li className="nav-li"><Link to="/contact">Contact</Link></li>

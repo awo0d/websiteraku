@@ -1,0 +1,37 @@
+[
+    {
+    "id":"1",
+    "name":"personnage1",
+    "image":"personnage1.jpg"
+},
+{
+    "id":"2",
+    "name":"personnage2",
+    "image":"personnage2.jpg"
+},
+{
+    "id":"3",
+    "name":"personnage3",
+    "image":"personnage3.jpg"
+},
+{
+    "id":"4",
+    "name":"personnage4",
+    "image":"personnage4.jpg"
+},
+{
+    "id":"5",
+    "name":"personnage5",
+    "image":"personnage5.jpg"
+},
+{
+    "id":"6",
+    "name":"personnage6",
+    "image":"personnage6.jpg"
+},
+{
+    "id":"7",
+    "name":"personnage7",
+    "image":"personnage7.jpg"
+}
+]

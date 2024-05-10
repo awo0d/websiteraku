@@ -1,0 +1,25 @@
+.contact-container {
+   
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Centre le contenu */
+  }
+  
+  .title {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contact-info {
+    padding-top: 40px;
+    margin-top: 20px;
+  }
+  
+  .contact-info p,.contact-info a {
+    font-size: 30px;
+    color: #666;
+  }
+  

@@ -1,0 +1,37 @@
+.expositions-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+  }
+  
+  .expositions {
+    margin-top: 20px;
+  }
+  
+  .year {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .event {
+    font-size: 20px;
+    color: #c73333; /* Couleur rouge spécifiée */
+    margin-right: 5px;
+  }
+  

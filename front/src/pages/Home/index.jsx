@@ -2,12 +2,16 @@ import React from "react";
 import useTextures from "../../hooks/useTextures";
 import usePlumiers from "../../hooks/usePlumiers";
 import useMasques from "../../hooks/useMasques";
+import usePersonnages from "../../hooks/usePersonnages";
+import usePersos from "../../hooks/usePersos";
 import "./home.css";
 
 const Home = () => {
   const { textures } = useTextures();
   const { plumiers } = usePlumiers();
   const { masques } = useMasques();
+  const { personnages } = usePersonnages();
+  const { persos } = usePersos();
   return (
     <div className="home-container">
       <div className="content">

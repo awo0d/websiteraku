@@ -46,11 +46,11 @@
 
 .red-band1 {
     position: absolute;
-    top: calc(38% - 95px); /* Bas de la page */
+    top: calc(34% - 95px); /* Bas de la page */
     left: 0;
     width: 100%;
     border-radius: 10px;
-    height: 500px; /* Hauteur de la première bande rouge */
+    height: 530px; /* Hauteur de la première bande rouge */
     background-color: #c73333; /* Couleur de la première bande rouge */
     z-index: -1; /* Assurer que la première bande rouge est positionnée derrière les autres éléments */
 }

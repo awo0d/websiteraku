@@ -1,87 +1,35 @@
-.page {
-    border: 10px solid black;
-    border-radius: 50px;
+.raku-container {
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    position: relative; /* Permet d'ajuster la position de la bande rouge */
-}
-
-.leraku-container {
-    position: relative;
-}
-
-
-.gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-.second-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.intro-text, .second-intro-text {
-    padding-top: 6%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.title {
-    font-size: 36px; /* Augmenter la taille de la police à 36px */
-    font-weight: bold; /* Mettre la police en gras */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Utiliser une police spécifique */
-    color: rgb(213, 46, 46); /* Couleur rouge spécifiée */
-    margin-right: 20px; /* Marge à droite */
-    margin-top: 8px; /* Marge en haut */
-    margin-left: 26px; /* Marge à gauche */
-    letter-spacing: 3px; /* Espacement entre les lettres */
-}
-
-
-
-.subtitle {
-    font-size: 20px; /* Taille de police plus grande que pour highlighted-text */
-    color: #808080; /* Couleur gris */
-    margin-bottom: 10px; /* Augmenter la marge pour plus d'espace */
-    font-family: Arial, sans-serif; /* Police de caractères */
-    font-style: italic; /* Style de police italique */
-}
-
-
-.highlighted-text {
-    font-weight: bold;
-    font-size: 20px; /* Taille de la police plus grande */
-    color: black; /* Couleur du texte en noir */
-    text-decoration: underline; /* Soulignement du texte */
-    text-decoration-color: blue; /* Couleur du soulignement */
-    text-decoration-thickness: 2px; /* Épaisseur du soulignement */
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;/* Police de caractères */
-}
-
-
-
-.first-band {
-    position: absolute;
-    top: calc(82% - 95px); /* Bas de la page */
-    left: 0;
-    width: 100%;
-    border-radius: 10px;
-    height: 250px; /* Hauteur de la première bande rouge */
-    background-color: #c73333; /* Couleur de la première bande rouge */
-    z-index: -1; /* Assurer que la première bande rouge est positionnée derrière les autres éléments */
   }
   
-  .second-band {
-    position: absolute;
-    top: calc(41% - 122px); /* Position verticale pour la deuxième bande rouge */
-    left: 0;
-    width: 100%;
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .raku-image {
+    height: 200px; /* Hauteur initiale de l'image */
+    width: 100%; /* Définissez la largeur à 100% pour assurer la responsivité */
+    background-image: url('raku.jpeg'); /* Définissez l'image de fond */
+    background-size: 33.33%; /* Réduisez la taille de l'image de fond à un tiers */
+    background-position: center; /* Centrez l'image de fond */
+    background-repeat: no-repeat;
+    margin: 10px auto; /* Ajoute un espace autour de l'image */
+    
+  }
+  
+  .description {
+    max-width: 600px;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    border: 2px solid #c73333; /* Encadre le texte en rouge */
     border-radius: 10px;
-    height: 200px; /* Hauteur de la deuxième bande rouge */
-    background-color: #c73333; /* Couleur de la deuxième bande rouge */
-    z-index: -1; /* Assurer que la deuxième bande rouge est positionnée derrière les autres éléments */
-    padding-bottom: 30px;
+    padding: 10px; /* Ajoute un peu d'espace intérieur pour le texte */
+    margin-bottom: 30px;
   }
   

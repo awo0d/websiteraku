@@ -1,35 +1,14 @@
-import useTextures from "../../hooks/useTextures";
-import usePlumiers from "../../hooks/usePlumiers";
+import React from "react";
 import "./leraku.css";
-import Card from "../../components/Card";
 
 const Leraku = () => {
-  const { textures } = useTextures();
-  const { plumiers } = usePlumiers();
-  //const plumiers = [...textures]; // Copie des textures pour les plumiers ou utilisez une autre source de données
- console.log(textures);
   return (
-    <div className="leraku-container">
-      <div className="red-band first-band"></div> {/* Première bande rouge */}
-      <div className="red-band second-band"></div> {/* Deuxième bande rouge */}
-      <div className="intro-text">
-        <h1 className="title">Les boites</h1>
-        <p className="subtitle">Petites séries et pièces uniques</p>
-        <p className="highlighted-text">Texturées:</p>
-      </div>
-      <div className="gallery"> 
-        {textures && textures.map((item)=>(
-          <Card key={item.id} item={item}/>
-        ))}
-      </div>
-      <div className="second-intro-text">
-        <p className="highlighted-text">Plumiers (pièces uniques) </p>
-      </div>
-      <div className="second-gallery"> 
-        {plumiers && plumiers.map((item)=>(
-          <Card key={item.id} item={item}/>
-        ))}
-      </div>
+    <div className="raku-container">
+      <h2 className="title">Le Raku</h2>
+      <div className="raku-image"></div>
+      <p className="description">
+        Le Raku est un procédé de cuisson céramique japonais qui remonte au XVIème siècle. Il est à l'origine lié à la cérémonie du thé. Le terme signifie littéralement : le bonheur dans le hasard. En effet, lors de la cuisson de l'émail, les pièces sont défournées à environ 960°C. Elles subissent donc un violent choc thermique puis sont ensuite enfumées. C'est le jeu de ces deux procédés qui font de la cuisson raku une source inépuisable de surprises toujours très riches d'enseignement.
+      </p>
     </div>
   );
 };
