@@ -1,58 +1,72 @@
+/* Styles de base pour le pied de page */
 .Footer {
-  
   width: 100%;
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: #ddd5d5; /* Changez la couleur de fond selon vos besoins */
-  height: 50px; /* Ajustez la hauteur selon votre design */
+  background-color: #ddd5d5; /* Couleur de fond neutre */
+  height: 50px; /* Hauteur fixe pour la cohérence */
+  padding-right: 20px; /* Espacement à droite pour le texte */
 }
 
+/* Styles pour le paragraphe dans le pied de page */
 .Footer p {
-  margin-right: 20px;
-  color: rgb(185, 184, 184);
+  margin: 0;
+  color: #b9b8b8; /* Couleur de texte légère */
+  cursor: pointer; /* Indique que l'élément est cliquable */
+  font-size: 16px; /* Taille de police légèrement augmentée pour la lisibilité */
 }
+
+/* Overlay pour le modal, couvrant toute la fenêtre */
 .modal-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent pour l'effet de superposition */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Contenu du modal avec esthétique propre */
 .modal-content {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
+  width: 300px; /* Largeur fixe pour un meilleur contrôle de la mise en page */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de flottement */
 }
 
+/* Titre du modal */
 .modal-content h2 {
+  color: #333; /* Couleur de texte foncée pour le contraste */
   margin-bottom: 20px;
 }
 
+/* Input général pour tous les champs du formulaire */
 .modal-content input {
-  width: 100%;
-  margin-bottom: 10px;
+  width: calc(100% - 16px); /* Ajustement pour padding */
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  margin-bottom: 10px;
 }
 
+/* Boutons avec style initial et au survol */
 .modal-content button {
+  width: auto;
   padding: 10px 20px;
-  margin-right: 10px;
-  background-color: #bfd7f8;
-  color: #000000;
-  border: none;
-  margin: 4px;
+  background-color: #bfd7f8; /* Bleu clair pour une apparence amicale */
+  color: #000;
+  margin-bottom: 10px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.3s; /* Transition douce pour le survol */
 }
 
+/* Changement de couleur au survol pour améliorer l'interactivité */
 .modal-content button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Bleu plus foncé pour le contraste */
 }

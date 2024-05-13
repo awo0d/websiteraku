@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
 
-
 const Footer = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -11,47 +10,65 @@ const Footer = () => {
 
   return (
     <div className="Footer">
-      <p onClick={openModal}>Administration</p>
+      <p onClick={openModal}>Réservation</p>
       {modalOpen && <Modal closeModal={() => setModalOpen(false)} />}
     </div>
   );
 };
 
 const Modal = ({ closeModal }) => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [date, setDate] = useState('');
+  const [time, setTime] = useState('');
+  const [firstName, setFirstName] = useState('');
+  const [lastName, setLastName] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Vérification des informations d'identification
-    if (username === 'rakuwebsite' && password === 'Passeword1') {
-      // Si les informations sont correctes, vous pouvez fermer le Modal et effectuer d'autres actions nécessaires
-      closeModal();
+    if (!date || !time || !email || !firstName || !lastName) {
+      setError('Tous les champs doivent être remplis');
     } else {
-      setError('Nom d\'utilisateur ou mot de passe incorrect');
+      console.log(`Réservation effectuée pour ${firstName} ${lastName} le ${date} à ${time}`);
+      closeModal();
     }
   };
 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h2>Admin</h2>
+        <h2>Réservation de salle</h2>
         {error && <p className="error">{error}</p>}
         <form onSubmit={handleSubmit}>
           <input
             type="text"
-            placeholder="Nom d'utilisateur"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Prénom"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
           />
           <input
-            type="password"
-            placeholder="Mot de passe"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
+            type="text"
+            placeholder="Nom"
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
           />
-          <button type="submit">Se connecter</button>
+          <input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <input
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)}
+          />
+          <input
+            type="time"
+            value={time}
+            onChange={(e) => setTime(e.target.value)}
+          />
+          <button type="submit">Réserver</button>
         </form>
         <button onClick={closeModal}>Fermer</button>
       </div>
